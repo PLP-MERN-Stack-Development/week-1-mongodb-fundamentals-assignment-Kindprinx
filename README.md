@@ -1,47 +1,70 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19671675&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
+# 📚 MongoDB Bookstore Project – PLP Assignment
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+This project demonstrates MongoDB fundamentals using a fictional **Bookstore** database. It covers CRUD operations, advanced queries, aggregation pipelines, and indexing — all using a sample dataset of 13 books.
 
-## Assignment Overview
+---
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+## 🛠️ Setup Instructions
 
-## Getting Started
+### Prerequisites:
+- MongoDB installed locally **OR**
+- Access to a MongoDB Atlas Cluster
+- MongoDB Shell (`mongosh`) or GUI (e.g., MongoDB Compass)
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+### Steps:
 
-## Files Included
+1. Clone or download this project.
+2. Open your terminal and navigate to the project folder.
+3. Run the following command to insert the books:
+   ```bash
+   mongosh < insert_books.js
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+📦 Sample Book Fields
+Each book document includes the following fields:
 
-## Requirements
+title (String)
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+author (String)
 
-## Submission
+genre (String)
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+published_year (Number)
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
+price (Decimal)
 
-## Resources
+in_stock (Boolean)
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+pages (Number)
+
+publisher (String)
+
+✅ Features & Queries
+🔹 CRUD Operations
+Find all books by genre, author, or year
+
+Update price of a book
+
+Delete a book by title
+
+🔹 Advanced Queries
+Combine conditions (e.g., in stock & recent)
+
+Projection (select fields only)
+
+Sort books by price (asc/desc)
+
+Pagination using limit() and skip()
+
+🔹 Aggregation Pipelines
+Average book price by genre
+
+Most published author
+
+Books grouped by publication decade
+
+🔹 Indexing & Performance
+Create single and compound indexes
+
+Use .explain() to analyze performance
+ Author
+Kindness Ebeneza 
